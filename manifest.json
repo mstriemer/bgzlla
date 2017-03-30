@@ -1,0 +1,16 @@
+{
+  "applications": {
+    "gecko": {
+      "id": "@bgzlla",
+      "strict_min_version": "42.0"
+    }
+  },
+  "background": {
+    "scripts": ["index.js"]
+  },
+  "description": "Bugzilla helpers",
+  "manifest_version": 2,
+  "name": "Bgzlla - Bugzilla helpers",
+  "permissions": ["contextMenus", "tabs"],
+  "version": "0.1"
+}
