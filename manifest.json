@@ -8,6 +8,10 @@
   "background": {
     "scripts": ["index.js"]
   },
+  "sidebar_action": {
+      "default_panel": "bugzilla-todos/index.html",
+      "default_title": "Bgzlla"
+  },
   "description": "Bugzilla helpers",
   "manifest_version": 2,
   "name": "Bgzlla - Bugzilla helpers",

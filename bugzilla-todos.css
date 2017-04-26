@@ -1,0 +1,30 @@
+@media all and (max-width: 500px) {
+  body {
+    display: flex-column;
+    padding: 10px;
+  }
+
+  #login-name {
+    margin-left: 0;
+    margin-right: 0;
+    width: calc(100vw - 23px);
+  }
+
+  #login-name:invalid {
+    /* hide the red border, we just want to align the text if it's filled in */
+    box-shadow: none;
+  }
+
+  #login-name:valid {
+    text-align: center;
+  }
+
+  #login-name,
+  #login-container {
+    margin-top: 10px;
+  }
+
+  .tab-content:not(.tab-content-selected) {
+    display: none;
+  }
+}
