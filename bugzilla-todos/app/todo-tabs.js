@@ -270,7 +270,7 @@ var TodoTabs = (function() {
       var size = Math.round(patch.size / 1000) + "KB";
       return (
         <div>
-          <a className="att-link" href={attachURL + patch.id} target="_blank"
+          <a className="att-link" href={attachURL + patch.id}
              title={patch.description + " - " + size}>
              patch by {patch.attacher.name}
           </a>
@@ -309,7 +309,7 @@ var TodoTabs = (function() {
       return (
         <div className="bug">
           <a className="bug-link" href={bugURL + bug.id}
-             target="_blank" title={bug.status + " - " + bug.summary}>
+             title={bug.status + " - " + bug.summary}>
             <span className="bug-id">
               {bug.id}
             </span>

@@ -27,4 +27,8 @@
   .tab-content:not(.tab-content-selected) {
     display: none;
   }
+
+  .tab-content {
+    border-right: none;
+  }
 }

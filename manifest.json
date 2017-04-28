@@ -8,11 +8,28 @@
   "background": {
     "scripts": ["index.js"]
   },
+  "content_scripts": [
+    {
+      "matches": ["*://fitzgen.github.io/bugzilla-todos/"],
+      "css": ["bugzilla-todos.css"]
+    }
+  ],
   "sidebar_action": {
-      "default_panel": "bugzilla-todos/index.html",
-      "default_title": "Bgzlla"
+    "default_icon": "/bugzilla-todos/lib/bugzilla.png",
+    "default_panel": "bugzilla-todos/index.html",
+    "default_title": "Bgzlla"
+  },
+  "commands": {
+    "_execute_sidebar_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y"
+      }
+    }
   },
   "description": "Bugzilla helpers",
+  "icons": {
+    "16": "/bugzilla-todos/lib/bugzilla.png"
+  },
   "manifest_version": 2,
   "name": "Bgzlla - Bugzilla helpers",
   "permissions": ["contextMenus", "tabs"],

@@ -21,3 +21,12 @@ browser.contextMenus.onClicked.addListener((info, tab) => {
       break;
   }
 });
+
+function toggleSidebar() {
+  browser.sidebarAction.getPanel({})
+    .then(() => {
+      browser.sidebarAction.setPanel({
+        panel: 'https://fitzgen.github.io/bugzilla-todos/',
+      });
+    });
+}
